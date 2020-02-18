@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Quick Damage Calculations</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <label>Small fall ~ 10ft. </label>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="fallDamage()">Roll</button>
+    </div>
+    <div class="col-md-2">
+      {{ fallDamageResult }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <label>Spiked pit </label>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="spikedPitDamage()">Roll</button>
+    </div>
+    <div class="col-md-2">
+      {{ spikedPitDamageResult }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <label>Poison needle trap, DC15 Con save or be poisoned for 1 hour </label>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="poisonNeedleDamage()">Roll</button>
+    </div>
+    <div class="col-md-2">
+      {{ poisonNeedleDamageResult }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <label>FIREBALL!!! </label>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="fireballDamage()">Roll</button>
+    </div>
+    <div class="col-md-2">
+      {{ fireballDamageResult }}
+    </div>
+  </div>
+</div>

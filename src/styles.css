@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.row {
+    padding-bottom: 1em;
+}
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+.content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.container {
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
