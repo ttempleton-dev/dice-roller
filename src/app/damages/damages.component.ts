@@ -12,6 +12,7 @@ export class DamagesComponent implements OnInit {
   spikedPitDamageResult = 0;
   poisonNeedleDamageResult = 0;
   fireballDamageResult = 0;
+  basicPotionHealResult = 0;
 
   constructor(public dataService: DataService) { }
 
@@ -36,6 +37,11 @@ export class DamagesComponent implements OnInit {
   public fireballDamage() {
     this.fireballDamageResult = 0;
     this.fireballDamageResult = this.dataService.rollDice(8, 6);
+  }
+
+  public basicPotionHeal() {
+    this.basicPotionHealResult = 0;
+    this.basicPotionHealResult = this.dataService.rollDice(2, 4) + 2;
   }
 
 }
